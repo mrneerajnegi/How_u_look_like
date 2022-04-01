@@ -20,3 +20,5 @@ keras-vggface==0.6
 keras_applications==1.0.8
 sklearn==0.0
 opencv-python==4.5.5.64
+opencv-python-headless
+numpy
