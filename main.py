@@ -6,7 +6,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 from PIL import Image
 import os
-# import cv2
 from mtcnn import MTCNN
 import numpy as np
 
@@ -24,7 +23,6 @@ def save_uploaded_image(uploaded_image):
         return False
 
 def extract_features(img_path,model,detector):
-#     img = cv2.imread(img_path)
     img=Image.open(img_path)
     img=np.array(img)
     results = detector.detect_faces(img)
